@@ -1,1 +1,55 @@
-body{font-family:Arial;} .logo{width:80px;}
+
+body{
+  font-family: Arial;
+  background: radial-gradient(circle at center, #3b0066, #0a0014 80%);
+  color:#e6d9ff;
+  margin:0;
+  background-attachment:fixed;
+}
+header{
+  background: rgba(20,0,40,0.6);
+  backdrop-filter: blur(4px);
+  padding:20px;
+  text-align:center;
+  border-bottom:2px solid #7a2bff;
+}
+nav a{
+  margin:0 10px;
+  color:#d8c4ff;
+  font-weight:700;
+  text-decoration:none;
+  padding:6px 12px;
+  border:1px solid #7a2bff;
+  border-radius:10px;
+  transition:0.3s;
+}
+nav a:hover{
+  background:#7a2bff;
+  box-shadow:0 0 10px #b372ff;
+  color:white;
+}
+main{
+  max-width:900px;
+  margin:40px auto;
+  background:rgba(30,0,60,0.55);
+  padding:20px 30px;
+  border-radius:20px;
+  box-shadow:0 0 20px #5a00b3;
+}
+.team-list li{
+  font-size:2rem;
+  font-weight:900;
+  padding:10px 0;
+  text-shadow:0 0 10px #a26bff;
+}
+/* Glow Logo */
+.logo{
+  width:120px;
+  filter: drop-shadow(0 0 6px #b56bff) drop-shadow(0 0 14px #7a2bff);
+  animation: logoGlow 3s infinite ease-in-out;
+}
+@keyframes logoGlow{
+  0%{ filter: drop-shadow(0 0 4px #7a2bff) drop-shadow(0 0 10px #b56bff);} 
+  50%{ filter: drop-shadow(0 0 14px #d4b1ff) drop-shadow(0 0 26px #a06bff);} 
+  100%{ filter: drop-shadow(0 0 4px #7a2bff) drop-shadow(0 0 10px #b56bff);} 
+}
